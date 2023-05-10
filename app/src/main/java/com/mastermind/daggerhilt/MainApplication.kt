@@ -2,6 +2,7 @@ package com.mastermind.daggerhilt
 
 import android.app.Application
 import android.util.Log
+import com.mastermind.daggerhilt.model.Battery
 import com.mastermind.daggerhilt.model.Camera
 import com.mastermind.daggerhilt.model.Processor
 import com.mastermind.daggerhilt.model.Snapdragon
@@ -17,16 +18,11 @@ class MainApplication : Application() {
     @Inject
     lateinit var process2: Processor
 
-
-
     @Inject
     lateinit var snapdragon1: Snapdragon
 
     @Inject
     lateinit var snapdragon2: Snapdragon
-
-
-
 
 
     override fun onCreate() {
